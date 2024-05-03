@@ -1,0 +1,39 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <style>
+    body {
+      background-image: url("portrirat.jpg");
+    }
+
+
+    img {
+      width: 250px;
+      height: auto;
+      border: 2px solid #000 border-radius: 20px;
+      box-shadow: 5px 5px 10px #999;
+    }
+
+    .picture {
+      background-image: url("portrirat.jpg");
+      width: 500px;
+      height: 500px;
+      background-attachment: fixed;
+      background-size: contain;
+    }
+  </style>
+</head>
+
+
+<body>
+  <img style="border:50px soild brown;" src="portrirat.jpg" alt="self portriat of me as a crackhead"
+    class="cat" />
+
+    <div class="picture">
+    <h1>no clussy?</h1>
+</div>
+</body>
+
+</html>
