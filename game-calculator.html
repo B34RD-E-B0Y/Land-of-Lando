@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Game Calculator</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    select, button { margin: 5px; padding: 5px; }
+    #result { margin-top: 20px; font-size: 1.2em; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h2>Game Score Calculator</h2>
+  
+  <label>Choose Character:</label>
+  <select id="character">
+    <option value="1">Judge (x1)</option>
+    <option value="2">Enemy (x2)</option>
+  </select><br>
+  
+  <label>Choose Weapon:</label>
+  <select id="weapon">
+    <option value="3">Sword (x3)</option>
+    <option value="4">Bow (x4)</option>
+  </select><br>
+  
+  <label>Dice Roll:</label>
+  <select id="roll">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+  </select><br>
+  
+  <button onclick="calculate()">Calculate</button>
+  
+  <div id="result"></div>
+  
+  <script>
+    function calculate() {
+      let char = parseInt(document.getElementById('character').value);
+      let weap = parseInt(document.getElementById('weapon').value);
+      let roll = parseInt(document.getElementById('roll').value);
+      
+      let score = char * weap * roll;
+      document.getElementById('result').innerText = "Your Score: " + score;
+    }
+  </script>
+</body>
+</html>
